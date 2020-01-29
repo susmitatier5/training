@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "dummy_extension",
+    "version": "0.2",
+    "description": "some extension",
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["dummy.js"]
+    }],
+    "browser_action": {
+        "default_icon": "clock.png",
+        "default_popup": "popup.html",
+        "default_title": "Dummy popup."
+
+    }
+}
